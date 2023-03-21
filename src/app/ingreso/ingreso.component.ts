@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Egreso } from '../egreso/egreso.model';
-import { EgresoService } from '../egreso/egreso.service';
 import { Ingreso } from './ingreso.model';
 import { IngresoService } from './ingreso.service';
 
@@ -16,6 +15,10 @@ export class IngresoComponent implements OnInit {
 
   ngOnInit(): void {
     this.ingresos = this.ingresosServicio.ingresos;
+  }
+
+  eliminarIngreso(ingreso:Ingreso){
+    this.ingresosServicio.eliminar(ingreso);
   }
 
 }
