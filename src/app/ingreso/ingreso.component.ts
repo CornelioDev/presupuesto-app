@@ -12,12 +12,10 @@ import { IngresoService } from './ingreso.service';
 export class IngresoComponent implements OnInit {
   
   ingresos:Ingreso[] = [];
-  egresos: Egreso[] = [];
-  constructor(private ingresosServicio:IngresoService, private egresoServicio:EgresoService) { }
+  constructor(private ingresosServicio:IngresoService) { }
 
   ngOnInit(): void {
     this.ingresos = this.ingresosServicio.ingresos;
-    this.egresos = this.egresoServicio.egresos;
   }
 
 }
