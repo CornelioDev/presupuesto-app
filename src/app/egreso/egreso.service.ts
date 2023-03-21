@@ -7,7 +7,7 @@ import { Egreso } from './egreso.model';
 export class EgresoService {
 
   constructor() { }
-  Ingreso:Egreso[] = [
+  egresos:Egreso[] = [
     new Egreso('Freidora de Aire', 800),
     new Egreso('Compra', 500)
   ]

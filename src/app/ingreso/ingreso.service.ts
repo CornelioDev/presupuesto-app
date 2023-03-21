@@ -7,7 +7,7 @@ import { Ingreso } from './ingreso.model';
 export class IngresoService {
 
   constructor() { }
-  Ingreso: Ingreso[] = [
+  ingresos: Ingreso[] = [
     new Ingreso('Venta coche', 1400),
     new Ingreso('Salrio', 2000)
   ]
