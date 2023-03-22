@@ -11,4 +11,9 @@ export class EgresoService {
     new Egreso('Freidora de Aire', 800),
     new Egreso('Compra', 500)
   ]
+  
+  eliminar(egreso: Egreso) {
+    const indice: number = this.egresos.indexOf(egreso);
+    this.egresos.splice(indice, 1);
+  }
 }
