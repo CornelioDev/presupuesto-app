@@ -16,4 +16,8 @@ export class EgresoService {
     const indice: number = this.egresos.indexOf(egreso);
     this.egresos.splice(indice, 1);
   }
+
+  agregar(descripcion, valor) {
+    this.egresos.push(new Egreso(descripcion, valor))
+  }
 }

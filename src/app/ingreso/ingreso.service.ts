@@ -16,4 +16,8 @@ export class IngresoService {
     const indice:number = this.ingresos.indexOf(ingreso);
     this.ingresos.splice(indice, 1);
   }
+  
+  agregar(descripcion, valor){
+    this.ingresos.push(new Ingreso(descripcion, valor))
+  }
 }

@@ -27,8 +27,8 @@ export class FormularioComponent implements OnInit {
 
   agregarRegistro(){
     if (this.tipo === "tipoIngreso")
-      this.ingresoServicio.ingresos.push(new Ingreso(this.inputDescripcion, this.inputValor));
+      this.ingresoServicio.agregar(this.inputDescripcion, this.inputValor);
     else
-      this.egresoServicio.egresos.push(new Egreso(this.inputDescripcion, this.inputValor));
+      this.egresoServicio.agregar(this.inputDescripcion, this.inputValor);
   }
 }
