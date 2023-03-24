@@ -267,3 +267,40 @@ h2 {
 
 .no_pagado .elemento_porcentaje { box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1); }
 .no_pagado:hover .elemento_descripcion { font-weight: 900; }
+
+/* Mobile verson */
+@media only screen and (max-width: 600px) {
+
+    .ingreso,
+    .egreso {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 20px;
+    }
+
+    .ingreso_titulo, .egreso_titulo {
+        margin-left:15px
+    }
+
+    .contenedor {
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .agregar_contenedor {
+        overflow: hidden;
+        text-align: initial;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .agregar_descripcion, .agregar_valor, .agregar_tipo {
+        width: auto;
+        margin-top:5px;
+    }
+
+    .agregar_btn{
+        margin-top:10px;
+    }
+}
