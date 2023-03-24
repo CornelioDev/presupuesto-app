@@ -8,7 +8,9 @@
             <div class="elemento_valor">- {{egreso.valor | currency:'DOP':'$':'1.2-2'}}</div>
             <div class="elemento_porcentaje">{{calcularPorcentaje(egreso) | percent}}</div>
             <div class="elemento_eliminar">
-                <button class="elemento_eliminar--btn"><i class="ion-ios-close-outline" (click)="eliminarEgreso(egreso)"></i></button>
+                <button class="elemento_eliminar--btn">
+                    <ion-icon class="close-circle-outline" (click)="eliminarEgreso(egreso)"></ion-icon>
+                </button>
             </div>
         </div>
     </div>
